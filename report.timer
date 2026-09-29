@@ -1,0 +1,11 @@
+[Unit]
+Description=Send Unity and Keitaro report hourly
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=0
+Unit=report.service
+
+[Install]
+WantedBy=timers.target

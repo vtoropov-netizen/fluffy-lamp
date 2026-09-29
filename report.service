@@ -1,0 +1,11 @@
+[Unit]
+Description=Hourly Unity and Keitaro report
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=reportbot
+WorkingDirectory=/opt/unity-keitaro-bot
+EnvironmentFile=/etc/unity-keitaro-bot.env
+ExecStart=/usr/bin/python3 /opt/unity-keitaro-bot/bot.py

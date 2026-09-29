@@ -1,0 +1,8 @@
+{
+  "campaign": "campaign",
+  "sub_id_16": "sub_id_16",
+  "geo": "country",
+  "installs": "campaign_unique_clicks",
+  "registrations": "conversions",
+  "purchases": "sales"
+}
